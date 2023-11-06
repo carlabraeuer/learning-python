@@ -1,5 +1,5 @@
-##1. print()function
-'''python
+## 1. print()function
+```python
 #Replace "type here" on line 2 with "Hello World!"
 print("Hello World!")
 
@@ -10,7 +10,7 @@ print(my_text)
 #Type a couple of different values on line 9 inside the print function. Make 
 sure they are separated by commas.
 print("hello", "goodbye", "octopus", "pizza")
-'''
+```
 
 
 ##2. Variables
