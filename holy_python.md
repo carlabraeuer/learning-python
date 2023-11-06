@@ -279,36 +279,59 @@ print(ans_1)
 
 ## 11. .sort()method
 ```python
-#a.
+#a. Sort the list in ascending order with .sort() method.
+lst = [11, 100, 99, 1000, 999]
+#Type your answer here.
+lst.sort()
+print(lst)
 
+#b. This time sort the countries in alphabetic order.
+lst = ["Ukraine", "Japan", "Canada", "Kazakhstan", "Taiwan", "India", "Belize"]
+#Type your code here
+lst.sort()
+print(lst)
 
-#b.
+#c. Now sort the list in descending order with .sort() method.
+lst = [11, 100, 101, 999, 1001]
+#Type your answer here.
+lst.sort(reverse = True)
+print(lst)
 
+#d. Can you sort the gift list in reverse alphabetic order?
+gift_list = ['socks', '4K drone', 'wine', 'jam']
+#Type your answer here.
+gift_list.sort(reverse = True)
+print(gift_list)
 
-#c.
+#e. Sort the list below in reverse alphabetic order and then assign the last element to the answer_1 variable.
+NFL = ["Panthers", "Bears", "Dolphins" "Patriots", "Saints", "Giants"]
+#Type your code here.
+NFL.sort(reverse = True)
+answer_1 = NFL[-1]
+print(answer_1)
 
-
-#d.
-
-
-#e.
-
-
-#f.
-
-
-#g.
-
+#f. Sort the cities from z to a.
+muni = ["Melbourne", "Shanghai", "Delhi", "Atlanta", "Moscow", "Montreal"]
+# Type your code here.
+muni.sort(reverse = True)
+print(muni)
 ```
 
 
 ## 12. .pop()method
 ```python
-#a.
-
+#a. Pop the last item of the list below.
+lst = [11, 100, 99, 1000, 999]
+#Type your answer here.
+popped_item = lst.pop()
+print(popped_item)
+print(lst)
 
 #b.
-
+lst = ["milk", "banana", "eggs", "bread", "broccoli", "lemons"]
+#Type your code here.
+item = lst.pop(lst.index("broccoli"))
+print(lst, item)
 ```
 
 
