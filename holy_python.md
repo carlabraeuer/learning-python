@@ -7,8 +7,7 @@ print("Hello World!")
 my_text = "Hello World!"
 print(my_text)
 
-#Type a couple of different values on line 9 inside the print function. Make 
-sure they are separated by commas.
+#Type a couple of different values on line 9 inside the print function. Make sure they are separated by commas.
 print("hello", "goodbye", "octopus", "pizza")
 ```
 
@@ -36,8 +35,7 @@ print(men_stepped_on_the_moon)
 my_reason_for_coding = "trying hard to be cool"
 print(my_reason_for_coding)
 
-#Assign a float with 2 decimals to the variable below. If you don't wan't to 
-search the value you can check out Hint 1.
+#Assign a float with 2 decimals to the variable below. If you don't wan't to search the value you can check out Hint 1.
 global_mean_sea_level_2018 = 21
 #Type your code here.
 global_mean_sea_level_2018 = 21.36
@@ -51,22 +49,19 @@ print(staying_alive)
 
 ## 4. Type Conversion
 ```python
-# Using type() function assign the type of the variable to answer_1, then print 
-it.
+# Using type() function assign the type of the variable to answer_1, then print it.
 men_stepped_on_the_moon = 12
 #Type your code here.
 answer_1 = type(men_stepped_on_the_moon)
 print(answer_1)
 
-#Using type() function assign the type of the variable to answer_2, then print 
-it.
+#Using type() function assign the type of the variable to answer_2, then print it.
 my_reason_for_coding = "intergalactic travel"
 #Type your code here.
 answer_2 = type(my_reason_for_coding)
 print (answer_2)
 
-#Using type() function assign the type of the variable to answer_3, then print 
-it.
+#Using type() function assign the type of the variable to answer_3, then print it.
 global_mean_sea_level_delta_2018 = 21.36
 #Type your code here.
 answer_3 = type(global_mean_sea_level_delta_2018)
@@ -78,26 +73,22 @@ staying_alive = True
 answer_4 = type(staying_alive)
 print(answer_4)
 
-#my_grade variable is a string (because it's in quotes). On line 9, convert it 
-to an integer.
+#my_grade variable is a string (because it's in quotes). On line 9, convert it to an integer.
 my_grade = "10"
 answer_5 = int(my_grade)
 print(answer_5)
 
-#my_temp variable is a float (because it has decimals). On line 9, convert it to 
-an integer.
+#my_temp variable is a float (because it has decimals). On line 9, convert it to an integer.
 my_temp = 97.70
 answer_6 = int(my_temp)
 print(answer_6)
 
-#shoe_price variable is a string (because it's in quotes). On line 9, convert it 
-into a float.
+#shoe_price variable is a string (because it's in quotes). On line 9, convert it into a float.
 shoe_price = "69.99"
 answer_7 = float(shoe_price)
 print(answer_7)
 
-#GWP denotes the total economic activity created by the world population 
-collectively in a year.
+#GWP denotes the total economic activity created by the world population collectively in a year.
 gross_world_product = 84.84
 gwp_str = str(gross_world_product)
 answer_8 = "In 2018 gross product of the world (GWP) was " + gwp_str + " in 
@@ -113,8 +104,7 @@ lst = [11, 100, 99, 1000, 999]
 answer_1 = lst[0]
 print(answer_1)
 
-#This time print the second element of the list directly on line 3. You should 
-get 100.
+#This time print the second element of the list directly on line 3. You should get 100.
 lst = [11, 100, 101, 999, 1001]
 print(lst[1])
 
@@ -130,8 +120,7 @@ gift_list = ['socks', '4K drone', 'wine', 'jam']
 gift_list.append("pajamas")
 print(gift_list)
 
-#On line 3, this time add the sub-list: ["socks", "tshirt", "pajamas"] to the 
-end of the gift_list.
+#On line 3, this time add the sub-list: ["socks", "tshirt", "pajamas"] to the end of the gift_list.
 gift_list = ['socks', '4K drone', 'wine', 'jam']
 #Type your code here.
 gift_list.append(["socks", "tshirt", "pajamas"])
@@ -143,15 +132,13 @@ gift_list = ['socks', '4K drone', 'wine', 'jam']
 gift_list.insert(2, "slippers")
 print(gift_list)
 
-#With .index() method you can learn the index number of an item inside your 
-list. Assign the index no of 8679 to the variable answer_1.
+#With .index() method you can learn the index number of an item inside your list. Assign the index no of 8679 to the variable answer_1.
 lst = [55, 777, 54, 6, 76, 101, 1, 2, 8679, 123, 99]
 #Type your code here.
 answer_1 = lst.index(8679)
 print(answer_1)
 
-#Using .append() method, add a new list to the end of the list which contains 
-strings: "Navigator" and "Suburban".
+#Using .append() method, add a new list to the end of the list which contains strings: "Navigator" and "Suburban".
 lst = ["CRV", "Outback", "XC90", "GL", "Cherokee", "Escalade"]
 #Type your code here.
 lst.append(["Navigator", "Suburban"])
