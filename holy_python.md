@@ -13,8 +13,8 @@ print("hello", "goodbye", "octopus", "pizza")
 ```
 
 
-##2. Variables
-'''python
+## 2. Variables
+```python
 #Type here. Assign a number to the variable: glass_of_water
 glass_of_water = 3
 print("I drank", glass_of_water, "glasses of water today.")
@@ -23,11 +23,11 @@ print("I drank", glass_of_water, "glasses of water today.")
 glass_of_water = 3
 glass_of_water = glass_of_water + 1
 print(glass_of_water)
-'''
+```
 
 
-##3. Data Types
-'''python
+## 3. Data Types
+```python
 #Assign an integer to the variable, then print it.
 men_stepped_on_the_moon = 12
 print(men_stepped_on_the_moon)
@@ -46,11 +46,11 @@ print(global_mean_sea_level_2018)
 #Assign True or False to the variable below then print it.
 staying_alive = False
 print(staying_alive)
-'''
+```
 
 
-##4. Type Conversion
-'''python
+## 4. Type Conversion
+```python
 # Using type() function assign the type of the variable to answer_1, then print 
 it.
 men_stepped_on_the_moon = 12
@@ -103,11 +103,11 @@ gwp_str = str(gross_world_product)
 answer_8 = "In 2018 gross product of the world (GWP) was " + gwp_str + " in 
 trillion US dollars."
 print(answer_8)
-'''
+```
 
 
-##6. Lists
-'''python
+## 6. Lists
+```python
 #Assign the first element of the list to answer_1 on line 2
 lst = [11, 100, 99, 1000, 999]
 answer_1 = lst[0]
@@ -192,7 +192,7 @@ lst = [55, 6, 777, 54, 6, 76, 101, 1, 6, 2, 6]
 #Type your code on line 4:
 answer_1 = max(lst)
 print(answer_1)
-'''
+```
 
 
-##9. Strings
+## 9. Strings
