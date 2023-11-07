@@ -327,7 +327,7 @@ popped_item = lst.pop()
 print(popped_item)
 print(lst)
 
-#b.
+#b. Remove "broccoli" from the list using .pop and .index methods.
 lst = ["milk", "banana", "eggs", "bread", "broccoli", "lemons"]
 #Type your code here.
 item = lst.pop(lst.index("broccoli"))
