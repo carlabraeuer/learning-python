@@ -337,27 +337,57 @@ print(lst, item)
 
 ## 17. Slicing Notation
 ```python
-#a.
+#a. Slice the word until first "a". (Tosc)
+wrd = "Toscana"
+#Type your answer here.
+ans_1 = wrd[0:4]
+print(ans_1)
 
+#b. Slice the word so that you get "cana".
+wrd = "Toscana"
+#Type your answer here.
+ans_1 = wrd[3:]
+print(ans_1)
 
-#b.
+#c. Now try to get "can" only.
+wrd = "Toscana"
+#Type your answer here.
+ans_1 = wrd[3:6]
+print(ans_1)
 
+#d. Can you slice the word from beginning to the end with steps of 2 (including the last character.)?
+wrd = "Toscana"
+#Type your answer here.
+ans_1 = wrd[0:1] + wrd[2:3] + wrd[4:5] + wrd[6:7]
+print (ans_1)
+#solution
+ans_1 = wrd[::2]
+#another way
+ans_1= wrd[0:7:2]
 
-#c.
+#e. Now slice the word with steps of 2, excluding first and last characters.
+wrd = "Toscana"
+#Type your answer here.
+ans_1 = wrd[1:-1:2]
+print(ans_1)
 
+#f. Can you slice the list so that it's reversed without using the .reverse() method?
+lst = [0,1,2,3,4]
+#Type your answer here.
+ans_1 = lst[::-1]
+print(ans_1)
 
-#d.
+#g. Slice the list so that only last 2 elements are included.
+lst = [0,1,2,3,4]
+#Type your answer here.
+ans_1 = lst[-2:]
+print(ans_1)
 
+#h. Slice the second and third elements (50 and 20) in the list.
+lst = [40,50,20,30,90]
+#Type your answer here.
+ans_1 = lst[1:3]
+print(ans_1)
+```
 
-#e.
-
-
-#f.
-
-
-#g.
-
-
-#h.
-
-``
+**THE END**
