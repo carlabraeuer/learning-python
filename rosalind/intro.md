@@ -69,7 +69,8 @@ As a result I got **Minipterus argali** which I copy-pasted to rosalind. The ans
 ### **EXTRA COMMENTS**
 So while writing this markdown file I learned a few more things about markdown:
 1. I don't have to commit every single time to see how my changes look, there is a "Preview"-Tab 😱
-2. when using ```python blablabla ``` inside a line it won't get that "python" is part of the "```" ~see here~
-3. just right now I realised tilde strikes something through (didn't mean to do that)
+2. putting \ after writign something adds a new line 
+3. when using ```python blablabla ``` inside a line it won't get that "python" is part of the "```" ~see here~
+4. just right now I realised tilde strikes something through (didn't mean to do that)
 
 
