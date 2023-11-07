@@ -1,7 +1,11 @@
 ## rosalind homework
 
 ### **INI1:** 
-This first excercise was fairly simple. At first i panicked because it said I only had 5min, but then I downloaded the dataset and followed the one simple instruction of typing ```python import this ``` into the JupyterLab.
+This first excercise was fairly simple. At first I panicked because it said I only had 5min, but then I downloaded the dataset and followed the one simple instruction of typing
+```python
+import this
+```
+into the JupyterLab.
 I got the poem as output and copy-pasted it to rosalind. The answer was correct.
 
 ### **INI2:** 
@@ -14,7 +18,7 @@ def pythagoras_square(a, b):
 example pythagoras_square(a, b)
 print(example)
 ```
-Then I started the exercise and downloaded the dataset and got **919 866**. I exchanged **a** and **b** of the second part of my code with those numbers. Then because apparently I also can't write, it gave me an error. I realized i missed the "=", so I added that. The final code looked like this:
+Then I started the exercise and downloaded the dataset and got **919 866**. I exchanged **a** and **b** of the second part of my code with those numbers. Then because apparently I also can't write, it gave me an error. I realized I missed the "=" after example, so I added that. The final code looked like this:
 ```python
 def pythagoras_square(a, b):
     c = (a**2 + b**2)
@@ -26,7 +30,11 @@ print(example)
 As a result I got **1594517** which I copy-pasted to rosalind. The answer was correct.
 
 ### **INI3:**
-When I saw that we needed to slice stuff I went back to the holy python website and looked at exercise 17. Trying it out with the example I then (after getting a few errors like *TypeError: can only concatenate list (not "str") to list* because I didn't define lst as a space and just wrote ```python s[1:2] + " " + s[4:5] ``` or *NameError: name '...' is not defined* when forgetting the quotation marks) wrote this command in my console:
+When I saw that we needed to slice stuff I went back to the holy python website and looked at exercise 17. Trying it out with the example I then (after getting a few errors like "*TypeError: can only concatenate list (not "str") to list*" because I didn't define lst as a space and just wrote 
+```python
+s[1:2] + " " + s[4:5]
+```
+or "*NameError: name '...' is not defined*" when forgetting the quotation marks) wrote this command in my console:
 ```python
 s = "xxx"
 lst = " "
@@ -40,8 +48,8 @@ solution = s[a:b+1] + lst + s[c:d+1]
 print(solution)
 ```
 I then started the exercise and downloaded the dataset, I got:
-**HD3fRxVYxBCTV9ypWwOMinipterusigKm59eL21wkXsOWDdUXMJNIMipUC7bmFvIKroOnDyLd74hBl58iPbKa2M9lc4KORTuVi5Ic7TVCSOZVB59NcS6f6IZylcbz84fargali1a1WQA8AXOiHrabX7wBkOeZnjFu5OF4eY8.
-19 28 128 133** 
+**HD3fRxVYxBCTV9ypWwOMinipterusigKm59eL21wkXsOWDdUXMJNIMipUC7bmFvIKroOnDyLd74hBl58iPbKa2M9lc4KORTuVi5Ic7TVCSOZVB59NcS6f6IZylcbz84fargali1a1WQA8AXOiHrabX7wBkOeZnjFu5OF4eY8.\
+19 28 128 133**\
 I copied the string and replaced the **xxx** with it and defined the variables **a, b, c, d** with the integers respectively.
 It looked like this:
 ```python
@@ -57,5 +65,11 @@ solution = s[a:b+1] + lst + s[c:d+1]
 print(solution)
 ```
 As a result I got **Minipterus argali** which I copy-pasted to rosalind. The answer was correct.
+
+### **EXTRA COMMENTS**
+So while writing this markdown file I learned a few more things about markdown:
+1. I don't have to commit every single time to see how my changes look, there is a "Preview"-Tab 😱
+2. when using ```python blablabla ``` inside a line it won't get that "python" is part of the "```" ~see here~
+3. just right now I realised tilde strikes something through (didn't mean to do that)
 
 
