@@ -376,6 +376,7 @@ lst = [0,1,2,3,4]
 #Type your answer here.
 ans_1 = lst[::-1]
 print(ans_1)
+#from the end to the beginning in steps of -1 = from the back! Bad answer tho, better to use reverse function - easier to read
 
 #g. Slice the list so that only last 2 elements are included.
 lst = [0,1,2,3,4]
