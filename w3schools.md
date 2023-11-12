@@ -13,4 +13,10 @@ The exercises were quite quick and easy to solve.
 ## If-Statements
 This was a revision as well, although I didn't know about ```elif```. I don't like the suggestion to put everything in one line it there is only one statement tho, 
 to me this makes it harder to read. I also found pass interesting, even if I can't really think of a good use-case.\
-For the exercises I was very glad to be reminded to use a colon.
+For the exercises I was very glad to be reminded to use a colon. They were quite easy, but i still very much do not like the short-hand-option.
+
+## For-Loops
+Again mostly a revision, but I found ```break``` and ```continue``` insteresting.
+The exercises again were quite easy.
+
+**Overall I really liked w3schools!**
