@@ -19,4 +19,7 @@ For the exercises I was very glad to be reminded to use a colon. They were quite
 Again mostly a revision, but I found ```break``` and ```continue``` insteresting.
 The exercises again were quite easy.
 
+## Booleans
+Exercises 1, 2 and 3 were very easy and doable without much knowledge, for the 4th and 5th one I looked at the corresponding w3schools tutorial.
+
 **Overall I really liked w3schools!**
