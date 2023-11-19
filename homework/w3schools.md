@@ -22,4 +22,7 @@ The exercises again were quite easy.
 ## Booleans
 Exercises 1, 2 and 3 were very easy and doable without much knowledge, for the 4th and 5th one I looked at the corresponding w3schools tutorial.
 
+## Dictionaries
+Reading the chapter was a good revision, with it the exercise was very easy.
+
 **Overall I really liked w3schools!**
