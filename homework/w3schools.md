@@ -25,4 +25,8 @@ Exercises 1, 2 and 3 were very easy and doable without much knowledge, for the 4
 ## Dictionaries
 Reading the chapter was a good revision, with it the exercise was very easy.
 
+## Functions
+I don't know if I completely got the hang and usecase of functions yet, but I think after practicing a bit more I will.
+With reading the capter, the exercises were very doable.
+
 **Overall I really liked w3schools!**
