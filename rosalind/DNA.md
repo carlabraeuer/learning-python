@@ -81,3 +81,16 @@ result = ' '.join(map(str, my_list))
 print(result)
 ```
 With this I solved it in my first attempt.
+While solving I realized I needed to exchange 3 items in my code, so i did it like this to make it more generic:
+```python
+dna_seq = "GATATATGCATATACTT"
+sub_seq = "ATAT"
+indices = []
+
+for i in range(len(dna_seq)):
+    if dna_seq[i:i+len(sub_seq)] == sub_seq:
+        indices.append(i + 1)
+
+result = ' '.join(map(str, indices))
+print(result)
+```
