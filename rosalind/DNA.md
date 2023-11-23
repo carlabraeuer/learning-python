@@ -95,7 +95,7 @@ result = ' '.join(map(str, indices))
 print(result)
 ```
 
-# Mendels first law
+## Mendels first law
 So this one really did a number on me... I tried breaking it down and drawing it, but used very **wrong** math...\
 <img width="495" alt="Screenshot 2023-11-23 at 21 31 08" src="https://github.com/carlabraeuer/learning-python/assets/148707864/f0a28b0e-d11b-476b-a5b7-46c009f9bb58">
 .\
@@ -113,13 +113,33 @@ result = dom / (dom+rez)
 print(result)
 ```
 Sadly this worked for the rosalind example so I tried it out and got two wrong trys. 
-I figured it was because my formula only works when k, m and n are the same number.\
-When we tried it in class we also broke it down and wrote down the right math, this way I could figure out the right formula:
+I figured it was because my code only works when k, m and n are the same number.\
+When we tried it in class we also broke it down and wrote down the right math.\
+Still took me a bit because I still made some wrong turns in math but in the end I made this drawing:\
+<img width="548" alt="Screenshot 2023-11-23 at 23 21 36" src="https://github.com/carlabraeuer/learning-python/assets/148707864/2a36ba51-7f51-4c70-8c23-edaf38ba3681">
+.\
+With it I could figure out the right code:
 ```python
+k = 2
+m = 2
+n = 2
+pop = k + m + n
 
+kk = (k/pop) * (k-1)/(pop-1)
+km = (k/pop) * m/(pop-1)
+kn = (k/pop) * n/(pop-1)
+mk = (m/pop) * k/(pop-1)
+mm = (m/pop) * (m-1)/(pop-1) * 0.75
+mn = (m/pop) * n/(pop-1) * 0.5
+nk = (n/pop) * k/(pop-1)
+nm = (n/pop) * m/(pop-1) * 0.5
+
+dom = round(kk + km + kn + mk + mm + mn + nk + nm, 5)
+print(dom)
 ```
+With this I finally got it right on my third attempt.
 
-# Translating RNA into protein
+## Translating RNA into protein
 We started this exercise in class and talked about breaking it down into smaller problems.
 I decided to start with coding a for-loop that splits the string of RNA in triplets and saves it as a list, I iterated through the indices and only added 0 and the ones that can be devided by three and saved the letter ot that indice + the next two.
 Next I saved the RNA-protein-pairs in a dictionary, I tried some ways to save me typing, but none was really that efficient...
