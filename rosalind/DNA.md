@@ -95,7 +95,29 @@ result = ' '.join(map(str, indices))
 print(result)
 ```
 
-# Mendles first law
+# Mendels first law
+So this one really did a number on me... I tried breaking it down and drawing it, but used very **wrong** math...\
+<img width="495" alt="Screenshot 2023-11-23 at 21 31 08" src="https://github.com/carlabraeuer/learning-python/assets/148707864/f0a28b0e-d11b-476b-a5b7-46c009f9bb58">
+.\
+From this drawing I came up with this code:
+```python
+k = 2
+m = 2
+n = 2
+
+dom = k*4 + m*3 + k*m*n*10
+rez = n*4 + m*1 + k*m*n*2
+
+result = dom / (dom+rez)
+
+print(result)
+```
+Sadly this worked for the rosalind example so I tried it out and got two wrong trys. 
+I figured it was because my formula only works when k, m and n are the same number.\
+When we tried it in class we also broke it down and wrote down the right math, this way I could figure out the right formula:
+```python
+
+```
 
 # Translating RNA into protein
 We started this exercise in class and talked about breaking it down into smaller problems.
