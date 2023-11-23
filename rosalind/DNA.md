@@ -94,3 +94,60 @@ for i in range(len(dna_seq)):
 result = ' '.join(map(str, indices))
 print(result)
 ```
+
+# Mendles first law
+
+# Translating RNA into protein
+We started this exercise in class and talked about breaking it down into smaller problems.
+I decided to start with coding a for-loop that splits the string of RNA in triplets and saves it as a list, I iterated through the indices and only added 0 and the ones that can be devided by three and saved the letter ot that indice + the next two.
+Next I saved the RNA-protein-pairs in a dictionary, I tried some ways to save me typing, but none was really that efficient...
+Then I needed to write a new loop to translate the RNA to protein, but I had to be careful and include breaks at the stop codons!
+This is my code:
+```python
+rna = ("AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA")
+rna_split = []
+
+#splits in pairs of 3 and saves to rna_split
+for i in range(len(rna)):
+    if i == 0:
+        rna_split.append(rna[i:i+3])
+    elif i % 3 == 0:
+        rna_split.append(rna[i:i+3])
+print(rna_split)
+
+coding_dict = {
+    'UUU': 'F', 'CUU': 'L', 'AUU': 'I', 
+    'GUU': 'V', 'UUC': 'F', 'CUC': 'L', 
+    'AUC': 'I', 'GUC': 'V', 'UUA': 'L', 
+    'CUA': 'L', 'AUA': 'I', 'GUA': 'V', 
+    'UUG': 'L', 'CUG': 'L', 'AUG': 'M', 
+    'GUG': 'V', 'UCU': 'S', 'CCU': 'P', 
+    'ACU': 'T', 'GCU': 'A', 'UCC': 'S', 
+    'CCC': 'P', 'ACC': 'T', 'GCC': 'A', 
+    'UCA': 'S', 'CCA': 'P', 'ACA': 'T', 
+    'GCA': 'A', 'UCG': 'S', 'CCG': 'P', 
+    'ACG': 'T', 'GCG': 'A', 'UAU': 'Y', 
+    'CAU': 'H', 'AAU': 'N', 'GAU': 'D', 
+    'UAC': 'Y', 'CAC': 'H', 'AAC': 'N', 
+    'GAC': 'D', 'UAA': 'Stop', 'CAA': 'Q', 
+    'AAA': 'K', 'GAA': 'E', 'UAG': 'Stop', 
+    'CAG': 'Q', 'AAG': 'K', 'GAG': 'E', 
+    'UGU': 'C', 'CGU': 'R', 'AGU': 'S', 
+    'GGU': 'G', 'UGC': 'C', 'CGC': 'R', 
+    'AGC': 'S', 'GGC': 'G', 'UGA': 'Stop', 
+    'CGA': 'R', 'AGA': 'R', 'GGA': 'G', 
+    'UGG': 'W', 'CGG': 'R', 'AGG': 'R', 
+    'GGG': 'G'}
+
+protein = ""
+
+for i in rna_split:
+    if coding_dict[i] != "Stop":
+        protein = protein + coding_dict[i]
+    else:
+        break
+
+print(protein)
+```
+With this I solved it in my first attempt.
+
