@@ -2,7 +2,7 @@
 Contents: DNA, RNA, REVC, GC, HAMM, SUBS, IPRB, PROT
 
 ## DNA, counting DNA nucleotides
-This exercise was very nice, because I had to use "old" knowledge. Felt very nice to just know something and get the right solution immediately 😅\
+This exercise was very nice, because I had to use "old" knowledge. Felt very nice to just know something and get the right solution immediately 😅.\
 All I really needed was the .count() command.\
 I solved it like this:
 ```python
@@ -26,7 +26,7 @@ print(rna)
 With this I solved it in my first attempt.
 
 ## REVC, reverse compliment
-This again cost me a few more nerves, especially since I couldn't join the friday lesson. 
+This again cost me a few more nerves, especially since I couldn't join the friday lesson.\
 But with the flow diagram and some help from Barbara's notes I managed to get this solution:
 ```python
 dna = "AAAACCCGGT"
@@ -61,14 +61,13 @@ ACCCCCAAAA
 ```
 3. First I wanted to do 4 if-statements but with help of the flow-chart, I realized i needed elif.
 
-## GC,Coputing CG content
+## GC, Coputing CG content
 This one took me a bit, but I broke it down bit by bit and managed to come up with this code:
 ```python
 rosalind_cg = open("file", "r")
 fasta_list = rosalind_cg.read()
 fasta_list = fasta_list.split(">")
 fasta_list = fasta_list[1:]
-#print(fasta_list)
 
 fasta_dict = {}
 
@@ -79,7 +78,6 @@ for i in fasta_list:
     for j in i[1:]:
         value = value + j
     fasta_dict[key] = value
-#print(fasta_dict)
 
 gc = []
 
@@ -89,7 +87,6 @@ for k in fasta_dict:
     length = len(fasta_dict[k])
     fasta_dict[k] = round((c+g) * 100 / length, 6)
     gc.append(fasta_dict[k])
-#print(fasta_dict)
 
 highest = max(gc)
 
@@ -98,7 +95,7 @@ for key in fasta_dict.keys():
         print(key)
         print(highest)
 ```
-This probably is pretty ugly, but at least it makes sense to me and works 😅
+This probably is pretty ugly, but at least it makes sense to me and works 😅.\
 With this I solved it in my first attempt.
 
 ## HAMM,Counting point mutations
@@ -137,7 +134,7 @@ my_list = [2, 4, 10]
 result = ' '.join(map(str, my_list))
 print(result)
 ```
-With this I solved it in my first attempt.
+With this I solved it in my first attempt.\
 While solving I realized I needed to exchange 3 items in my code, so i did it like this to make it more generic:
 ```python
 dna_seq = "GATATATGCATATACTT"
@@ -197,9 +194,9 @@ print(dom)
 With this I finally got it right on my third attempt.
 
 ## PROT, Translating RNA into protein
-We started this exercise in class and talked about breaking it down into smaller problems.
-I decided to start with coding a for-loop that splits the string of RNA in triplets and saves it as a list, I iterated through the indices and only added 0 and the ones that can be devided by three and saved the letter ot that indice + the next two.
-Next I saved the RNA-protein-pairs in a dictionary, I tried some ways to save me typing, but none was really that efficient...
+We started this exercise in class and talked about breaking it down into smaller problems.\
+I decided to start with coding a for-loop that splits the string of RNA in triplets and saves it as a list, I iterated through the indices and only added 0 and the ones that can be devided by three and saved the letter ot that indice + the next two.\
+Next I saved the RNA-protein-pairs in a dictionary, I tried some ways to save me typing, but none was really that efficient...\
 Then I needed to write a new loop to translate the RNA to protein, but I had to be careful and include breaks at the stop codons!
 This is my code:
 ```python
