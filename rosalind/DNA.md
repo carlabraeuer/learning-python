@@ -1,4 +1,5 @@
 # My experience with rosalind's DNA exercises
+Contents: DNA, RNA, REVC, GC, HAMM, SUBS, IPRB, PROT
 
 ## DNA, counting DNA nucleotides
 This exercise was very nice, because I had to use "old" knowledge. Felt very nice to just know something and get the right solution immediately 😅\
@@ -60,7 +61,26 @@ ACCCCCAAAA
 ```
 3. First I wanted to do 4 if-statements but with help of the flow-chart, I realized i needed elif.
 
-## Mofif in DNA
+## GC,
+
+
+## HAMM,Counting point mutations
+I did this one quite late so I found it easier to solve!
+This is my code:
+```python
+ham1 = "GAGCCTACTAACGGGAT"
+ham2 = "CATCGTAATGACGGCCT"
+
+count = 0
+
+for i in range(len(ham1)):
+    if ham1[i] != ham2[i]:
+        count = count + 1
+print(count)
+```
+With this I solved it in my first attempt.
+
+## SUBS, Mofif in DNA
 This excercise was discussed in class today, so we solved almost everything together. I ended up with this solution.
 ```python
 dna = "GATATATGCATATACTT"
@@ -95,7 +115,7 @@ result = ' '.join(map(str, indices))
 print(result)
 ```
 
-## Mendels first law
+## IPRB, Mendels first law
 So this one really did a number on me... I tried breaking it down and drawing it, but used very **wrong** math...\
 <img width="495" alt="Screenshot 2023-11-23 at 21 31 08" src="https://github.com/carlabraeuer/learning-python/assets/148707864/f0a28b0e-d11b-476b-a5b7-46c009f9bb58">
 .\
@@ -139,7 +159,7 @@ print(dom)
 ```
 With this I finally got it right on my third attempt.
 
-## Translating RNA into protein
+## PROT, Translating RNA into protein
 We started this exercise in class and talked about breaking it down into smaller problems.
 I decided to start with coding a for-loop that splits the string of RNA in triplets and saves it as a list, I iterated through the indices and only added 0 and the ones that can be devided by three and saved the letter ot that indice + the next two.
 Next I saved the RNA-protein-pairs in a dictionary, I tried some ways to save me typing, but none was really that efficient...
