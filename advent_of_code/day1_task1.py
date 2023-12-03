@@ -1,4 +1,4 @@
-file = open("day1_task1_input.txt", "r")
+file = open("day1_input.txt", "r")
 numbers = []
 for line in file.readlines():
     first = ""
