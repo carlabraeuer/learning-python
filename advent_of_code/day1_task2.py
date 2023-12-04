@@ -4,36 +4,38 @@ for line in file.readlines():
     
     #numbers_written = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]:
 
+    line_copy = line
     for index in range(len(line)):
         if line[index:].startswith("one"):
-            line.replace("one", "1", 1)
+            line_copy.replace("one", "1", 1)
             break
         if line[index:].startswith("two"):
-            line.replace("two", "2", 1)
+            line_copy.replace("two", "2", 1)
             break
         if line[index:].startswith("three"):
-            line.replace("three", "3", 1)
+            line_copy.replace("three", "3", 1)
             break
         if line[index:].startswith("four"):
-            line.replace("four", "4", 1)
+            line_copy.replace("four", "4", 1)
             break
         if line[index:].startswith("five"):
-            line.replace("five", "5", 1)
+            line_copy.replace("five", "5", 1)
             break
         if line[index:].startswith("six"):
-            line.replace("six", "6", 1)
+            line_copy.replace("six", "6", 1)
             break
         if line[index:].startswith("seven"):
-            line.replace("seven", "7", 1)
+            line_copy.replace("seven", "7", 1)
             break
         if line[index:].startswith("eight"):
-            line.replace("eight", "8", 1)
+            line_copy.replace("eight", "8", 1)
             break
         if line[index:].startswith("nine"):
-            line.replace("nine", "9", 1)
+            line_copy.replace("nine", "9", 1)
             break
 
     line = line[::-1]
+    line_copy = line
     for index in range(len(line)):
         if line[index:].startswith("one"[::-1]):
             line.replace("one"[::-1], "1", 1)
