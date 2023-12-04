@@ -50,7 +50,7 @@ for line in file.readlines():
     for i in rounds:
         one_round = i.split(", ")
         #print(one_round)
-        one_round_dict = {}
+        one_round_dict = {"red" : 0, "green" : 0, "blue" : 0}
         for j in one_round:
             one_colour = j.split(" ")
             #print(one_colour)
@@ -89,16 +89,17 @@ def is_game_valid(game):
         is_valid.append(current_round)
     game_valid = all(is_valid)
     return game_valid
-#print(is_game_valid(all_games_dict["98"]))
+#print(is_game_valid(all_games_dict["100"]))
 # ERROR: what if one round does not have all colours
 
 #print(all_games_dict["100"])
 #print(game1)
 
 valid_games = []
-#for game_id in all_games_dict.keys():
+for game_id in all_games_dict.keys():
     #print(game_id)
-    #if is_game_valid == True:
-        #valid_games.append("game_id")
+    if is_game_valid(all_games_dict[game_id]) == True:
+        valid_games.append(int(game_id))
 
-#print(valid_games)
+print(valid_games)
+print(sum(valid_games))
