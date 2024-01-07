@@ -18,3 +18,5 @@ for line in file.readlines():
         numbers.append(int(both))
 
 print(sum(numbers))
+#54667
+#54203

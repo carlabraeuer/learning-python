@@ -1,72 +1,23 @@
+#with the help of sophias and monikas solution, I could get around the edgecases :)
+
 file = open("day1_input.txt", "r")
+
+
+lines = file.read()
+
+word_to_number = {'oneight':'18', 'threeight':'38', 'fiveight':'58',
+                  'nineight':'98', 'eightwo':'82', 'eighthree':'83',
+                  'sevenine':'79','twone':'21', 
+                  'one':'1', 'two':'2', 'three':'3',
+                  'four':'4', 'five':'5', 'six':'6', 'seven':'7',
+                  'eight':'8', 'nine':'9'}
+
+for written, digit in word_to_number.items():
+    lines = lines.replace(written, digit)
+#print(lines)
+
 numbers = []
-for line in file.readlines():
-    
-    #numbers_written = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]:
-
-    line_copy = line
-    for index in range(len(line)):
-        if line[index:].startswith("one"):
-            line_copy.replace("one", "1", 1)
-            break
-        if line[index:].startswith("two"):
-            line_copy.replace("two", "2", 1)
-            break
-        if line[index:].startswith("three"):
-            line_copy.replace("three", "3", 1)
-            break
-        if line[index:].startswith("four"):
-            line_copy.replace("four", "4", 1)
-            break
-        if line[index:].startswith("five"):
-            line_copy.replace("five", "5", 1)
-            break
-        if line[index:].startswith("six"):
-            line_copy.replace("six", "6", 1)
-            break
-        if line[index:].startswith("seven"):
-            line_copy.replace("seven", "7", 1)
-            break
-        if line[index:].startswith("eight"):
-            line_copy.replace("eight", "8", 1)
-            break
-        if line[index:].startswith("nine"):
-            line_copy.replace("nine", "9", 1)
-            break
-
-    line = line[::-1]
-    line_copy = line
-    for index in range(len(line)):
-        if line[index:].startswith("one"[::-1]):
-            line.replace("one"[::-1], "1", 1)
-            break
-        if line[index:].startswith("two"[::-1]):
-            line.replace("two"[::-1], "2", 1)
-            break
-        if line[index:].startswith("three"[::-1]):
-            line.replace("three"[::-1], "3", 1)
-            break
-        if line[index:].startswith("four"[::-1]):
-            line.replace("four"[::-1], "4", 1)
-            break
-        if line[index:].startswith("five"[::-1]):
-            line.replace("five"[::-1], "5", 1)
-            break
-        if line[index:].startswith("six"[::-1]):
-            line.replace("six"[::-1], "6", 1)
-            break
-        if line[index:].startswith("seven"[::-1]):
-            line.replace("seven"[::-1], "7", 1)
-            break
-        if line[index:].startswith("eight"[::-1]):
-            line.replace("eight"[::-1], "8", 1)
-            break
-        if line[index:].startswith("nine"[::-1]):
-            line.replace("nine"[::-1], "9", 1)
-            break
-    line = line[::-1]
-        
-
+for line in lines.split():
     first = ""
     last = ""
     for char in line:
