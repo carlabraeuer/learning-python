@@ -1,37 +1,33 @@
-#find the next number of all sequences
-#add next numbers
+file = open("day9_input.txt", "r")
+lines = file.read()
 
-#GIVEN: lists of numbers - sequence has a pattern
+lines = lines.split("\n")
 
-list_one = [1, 3, 6, 10, 15, 21]
-
-def all_zero(num):
-    # if list empty, reurn false
-    if len(num) == 0:
-        return False
-    for n in num:
+def all_zero(list):
+    for n in list:
         if n != 0:
             return False
     return True
 
-import copy
+def add_next(list):
+    pd = []
+    for i in range(len(list)):
+        if i < len(list) -1:
+            pd.append(list[i+1] - list[i])
+    if all_zero(pd):
+        return 0
+    else:
+        return pd[-1] + add_next(pd)
 
-def predict_next(input_list):
-    last_pos = []
-    last_pos.append(input_list[-1])
-    #print(last_pos)
-    try_list = copy.deepcopy(input_list)
-    diff_list  = []
-    while not all_zero(diff_list):
-        for i in range(len(try_list)):
-            if i + 1 < len(try_list):
-                diff_list.append(try_list[i + 1] - try_list[i])
-            print(diff_list)
-        try_list = diff_list
-        last_pos.append(diff_list[-1])
-        print(diff_list)
-    return(last_pos)
+def predict_next(list):
+    return list[-1] + add_next(list)
 
-predict_next(list_one)
+sum = 0  
+for line in lines:
+    lines_list = line.split(" ")
+    for i in range(len(lines_list)):
+        lines_list[i] = int(lines_list[i])
+    number = predict_next(lines_list)
+    sum = sum + number
 
-# boolean values all-function to check for 0!!!!! 
+print(sum)
